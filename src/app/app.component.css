@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.sun-continent-list {
+  margin-top: 15px !important;
+}
+
+#chartdiv {
+  width: 100%;
+  height: calc(100vh - 165px);
+  transition: 0.2s;
+}
+
+.mt-2 {
+  margin-top: 30px;
+}
+
+.mb-2 {
+  margin-bottom: 30px;
+}

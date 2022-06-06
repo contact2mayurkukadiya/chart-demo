@@ -1,0 +1,10 @@
+<mat-card class="container">
+  <mat-card-title>COVID Statistic</mat-card-title>
+  <mat-card-subtitle class="sun-continent-list">
+    <span class="bold"> Indian SubContinents : </span>
+    {{ indianSubContinents.join(', ') }}
+  </mat-card-subtitle>
+  <mat-spinner class="mt-2 mb-2" *ngIf="loader"></mat-spinner>
+  <div class="mt-2" id="chartdiv" *ngIf="stateData.length > 0"></div>
+  <p class="mt-2" *ngIf="stateData.length <= 0 && !loader">No Data Found</p>
+</mat-card>
